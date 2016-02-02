@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root type="1">
+	<range top="0" left="0" bottom="608" right="1080" type="video" name="video"/>
+	<range top="570" left="100" bottom="600" right="980" type="notice" name="notice" color="FFFFD700" fontsize="24" speed="2"/>
+	<range top="10" left="900" bottom="50" right="1070" type="weather" name="weather"/>
+	<range top="10" left="10" bottom="50" right="140" type="time" name="time"/>
+	<range top="608" left="0" bottom="826" right="1080" type="complicate" name="medium" arriveshow="stop"/>	<!--arriveshow="stop/dis"-->
+	<range top="826" left="0" bottom="1044" right="1080" type="complicate" name="line2"  arriveshow="stop"/>
+	<range top="1044" left="0" bottom="1262" right="1080" type="complicate" name="line3"  arriveshow="stop"/>
+	<range top="1262" left="0" bottom="1480" right="1080" type="complicate" name="line4"  arriveshow="stop"/>
+	<range top="1480" left="0" bottom="1920" right="1080" type="pictrue" name="pictrue"/>
+</root>

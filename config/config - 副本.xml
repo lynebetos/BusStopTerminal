@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<system>
+    <software version="1.1.0" url="http://192.168.3.102:8080/TriffCityBusVersion/HttpGetVersion?" />
+    <configur version="" />
+    <server ip="192.168.3.101" port="7080" />
+    <notice dir="d:\buspanel\notice\playlist.xml" />
+    <template version="749EF765430B0DA9964C9A28ADA42F61" dir="..\config\template.xml" />
+    <pictrue dir="d:\buspanel\advertisement\pictrue\" />
+    <default dir="d:\buspanel\default.png" />
+    <volume dir="d:\buspanel\volumconfig.xml" />
+    <statistic upload="" />
+    <hart upload="15" />
+    <advertisement type="0">
+        <local dir="d:\buspanel\advertisement\video\" />
+        <play dir="d:\buspanel\play\playlist.xml" />
+    </advertisement>
+    <busstop>
+        <static>
+            <citycode id="341200" />
+            <curstop id="3412100262" name="香港财富广场" />
+            <data dir="d:\buspanel\staticdata.txt" />
+        </static>
+    </busstop>
+</system>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+	<list id="222222222222222">
+		<start date="2015-03-16" time="08:30:00"/>
+		<end date="2015-03-20" time="12:30:00"/>
+		<cycle time="30"/>
+		<advertisment id="0001" start="0" end="15" starttime="00:00:30" endtime="00:00:45"/>
+		<advertisment id="0002" start="16" end="30" starttime="00:10:10" endtime="00:10:25"/>
+	</list>
+	<list id="11111111111111">
+		<start date="2015-03-16" time="12:30:00"/>
+		<end date="2015-03-20" time="22:30:00"/>
+		<cycle time="30"/>
+		<advertisment id="0003" start="0" end="15" starttime="00:00:30" endtime="00:00:45"/>
+		<advertisment id="0004" start="16" end="30" starttime="00:10:10" endtime="00:10:25"/>
+	</list>
+</root>

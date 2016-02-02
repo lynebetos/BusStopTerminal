@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+	<list id="">
+		<start date="" time=""/>
+		<end date="" time=""/>
+		<interval time=""/>
+		<notice id="" text=""/>
+		<notice id="" text=""/>
+	</list>
+	<list id="">
+		<start date="" time=""/>
+		<end date="" time=""/>
+		<interval time=""/>
+		<notice id="" text=""/>
+		<notice id="" text=""/>
+	</list>
+</root>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
+<system>
+	<software version="0.0.1"/>
+	<configur version="0.0.1"/>
+	<server ip="58.83.216.167" port="7080"/>
+	<notice dir="d:\buspanel\notice\playlist.xml"/>
+	<template dir="..\config\template.xml"/>
+	<pictrue dir="d:\buspanel\advertisement\pictrue\"/>
+	<default dir="d:\buspanel\default.png"/>
+	<advertisement type="0">
+		<down port="10031"/>
+		<local dir="d:\buspanel\advertisement\video\"/>
+		<play dir="d:\buspanel\play\playlist.xml"/>
+	</advertisement>
+	<busstop>
+		<static>
+			<citycode id="341200" />
+			<curstop id="3412100220" name="香港财富广场"/>
+			<attribute linecount="5" onebord="3"/>
+			<data dir="d:\buspanel\staticdata.txt"/>
+		</static>
+	</busstop>
+</system>

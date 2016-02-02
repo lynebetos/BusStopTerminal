@@ -1,0 +1,110 @@
+2015-12-21 15:24:54,332.000 [584] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-21 15:26:08,161.000 [872] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=-2147483645
+2015-12-21 15:29:32,425.000 [12092] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-21 15:30:32,444.000 [11380] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-21 15:31:39,411.000 [3052] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-21 15:31:52,646.000 [12164] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=-2147483645
+2015-12-21 15:31:57,430.000 [12164] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=-1073741819
+2015-12-21 15:31:59,616.000 [12164] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=3
+2015-12-21 15:32:33,970.000 [6160] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-21 15:32:53,020.000 [10236] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=-2147483645
+2015-12-21 15:32:55,253.000 [10236] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=3
+2015-12-21 15:32:57,610.000 [10236] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=3
+2015-12-21 15:32:59,765.000 [10236] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:586) TerminalDefence : 电子终端站牌重启,退出代码=3
+2015-12-23 10:23:42,825.000 [13600] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2015-12-23 10:26:00,087.000 [5116] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:590) TerminalDefence : 电子终端站牌重启,退出代码=3
+2015-12-23 10:27:43,531.000 [15348] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 11:25:22,552.000 [4240] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 11:25:22,567.000 [4240] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-25 16:31:39,047.000 [3424] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 16:31:39,049.000 [3424] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-25 16:31:44,294.000 [7796] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 16:31:49,207.000 [14288] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-25 16:31:53,298.000 [14444] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:597) TerminalDefence : 电子终端站牌重启,退出代码=3
+2016-01-25 16:31:54,359.000 [7796] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:18:50,735.000 [5088] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 17:18:50,735.000 [5088] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-25 17:18:55,925.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:05,950.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:15,988.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:26,021.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:36,049.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:46,090.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:19:56,121.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:06,155.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:16,181.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:26,220.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:36,271.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:36,404.000 [6388] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-25 17:20:46,305.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:46,409.000 [6388] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-25 17:20:56,334.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:20:56,412.000 [6388] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-25 17:21:06,374.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:21:06,419.000 [6388] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-25 17:21:16,397.000 [17120] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:21:27,369.000 [5532] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 17:21:27,370.000 [5532] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-25 17:21:32,625.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:21:42,658.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:21:52,685.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:02,716.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:12,749.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:22,777.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:32,816.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:42,903.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:22:52,968.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:03,068.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:13,128.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:23,199.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:33,254.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:43,302.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:23:53,400.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:03,431.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:13,498.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:23,533.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:33,567.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:43,605.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:24:53,631.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:03,675.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:13,703.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:23,727.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:33,755.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:43,784.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:25:53,820.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:03,853.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:13,879.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:23,929.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:33,967.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:44,003.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:26:54,048.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:04,097.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:14,141.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:24,195.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:34,232.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:44,272.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:27:54,302.000 [16836] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:28:50,772.000 [5232] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-25 17:28:50,774.000 [5232] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-25 17:28:55,959.000 [15516] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:29:05,992.000 [15516] [ERROR] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-25 17:29:09,584.000 [16248] [INFO] (e:\vm shared\project\busproject\busstopterminal\busstopdefence\busstopdefencedlg.cpp:597) TerminalDefence : 电子终端站牌重启,退出代码=-1073741510
+2016-01-30 15:37:59,226.000 [11180] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-30 15:37:59,248.000 [11180] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-30 15:39:30,933.000 [10984] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
+2016-01-30 15:39:37,679.000 [12780] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-30 15:39:37,679.000 [12780] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-30 15:41:22,798.000 [12784] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:43:12,825.000 [12784] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:45:02,860.000 [12784] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:46:52,927.000 [12784] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:51:37,211.000 [7116] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-30 15:51:37,211.000 [7116] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-30 15:53:22,324.000 [8360] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:55:58,991.000 [8360] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 15:56:56,800.000 [11268] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-30 15:56:56,801.000 [11268] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-30 15:58:59,737.000 [13288] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-01-30 15:58:59,738.000 [13288] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-01-30 16:00:44,809.000 [9908] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-01-30 16:01:15,698.000 [11140] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程

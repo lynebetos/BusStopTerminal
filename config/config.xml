@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<system>
+    <software version="1.4.16" url="http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?" />
+    <configur version="56410B352263A0EDFFAE22B924D1B009" />
+    <server ip="fygj.palmcity.cn" port="7080" />
+    <notice dir="c:\buspanel\notice\playlist.xml" />
+    <template version="F73D12FD315D79A3C6772094F8EA4CDD" dir="..\config\template.xml" />
+    <pictrue dir="c:\buspanel\advertisement\pictrue\" />
+    <default dir="c:\buspanel" />
+    <volume dir="C:\buspanel\volumconfig.xml" />
+    <statistic upload="20" />
+    <hart upload="15" />
+    <advertisement type="0">
+        <local dir="c:\buspanel\advertisement\video\" />
+        <play dir="c:\buspanel\play\playlist.xml" />
+    </advertisement>
+    <busstop>
+        <static>
+            <citycode id="341200" />
+            <curstop id="3412100262" name="香港财富广场" />
+            <data dir="c:\buspanel\staticdata.txt" />
+        </static>
+    </busstop>
+</system>

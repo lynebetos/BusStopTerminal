@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BusStopTerminal", "BusStopTerminal\BusStopTerminal.vcproj", "{C2B1D62C-FB19-408F-9F43-97E268E52F5E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BusStopDefence", "BusStopDefence\BusStopDefence.vcproj", "{A8B5943B-BD40-48FC-A23C-78212F7AC79C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BusStopDesktop", "BusStopDesktop\BusStopDesktop.vcproj", "{C5A327D9-F8B2-4CF8-B1F5-0EFB3DB6FDEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B1D62C-FB19-408F-9F43-97E268E52F5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C2B1D62C-FB19-408F-9F43-97E268E52F5E}.Debug|Win32.Build.0 = Debug|Win32
+		{C2B1D62C-FB19-408F-9F43-97E268E52F5E}.Release|Win32.ActiveCfg = Release|Win32
+		{C2B1D62C-FB19-408F-9F43-97E268E52F5E}.Release|Win32.Build.0 = Release|Win32
+		{A8B5943B-BD40-48FC-A23C-78212F7AC79C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8B5943B-BD40-48FC-A23C-78212F7AC79C}.Debug|Win32.Build.0 = Debug|Win32
+		{A8B5943B-BD40-48FC-A23C-78212F7AC79C}.Release|Win32.ActiveCfg = Release|Win32
+		{A8B5943B-BD40-48FC-A23C-78212F7AC79C}.Release|Win32.Build.0 = Release|Win32
+		{C5A327D9-F8B2-4CF8-B1F5-0EFB3DB6FDEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5A327D9-F8B2-4CF8-B1F5-0EFB3DB6FDEA}.Debug|Win32.Build.0 = Debug|Win32
+		{C5A327D9-F8B2-4CF8-B1F5-0EFB3DB6FDEA}.Release|Win32.ActiveCfg = Release|Win32
+		{C5A327D9-F8B2-4CF8-B1F5-0EFB3DB6FDEA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
