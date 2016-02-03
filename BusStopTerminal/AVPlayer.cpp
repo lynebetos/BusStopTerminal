@@ -319,9 +319,17 @@ bool    CAVPlayer::OpenFile(const char* pszFilePath)
 {     
 	LogObject;
     // 打开文件并读取文件的头部,检测是否音视频文件 avformat_open_input
-    if(avformat_open_input(&m_pavFormatCtx, pszFilePath, NULL, NULL)!=0)
+	av_register_all();
+
+	char szError[1024] = {0};
+	int nRes = avformat_open_input(&m_pavFormatCtx, pszFilePath, NULL, NULL);
+    if(nRes != 0)
     {
-		LogOutError("打开视频文件失败");
+		av_strerror(nRes, szError, 1024);
+		stringstream sstr;
+		sstr<<"打开视频文件"<<pszFilePath<<"失败:"<<nRes<<"("<<szError<<")";
+		LogOutError(sstr.str().c_str());
+		sstr.str() = "";
         return false; // Couldn't open file
     }
 

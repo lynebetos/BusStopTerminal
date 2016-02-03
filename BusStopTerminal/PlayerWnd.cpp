@@ -190,7 +190,7 @@ void CPlayerWnd::ProcPlayCtrl()
 
 		//log
 		string strlog = "播放视频ID是:";
-		strlog += stVideo.strID;
+		strlog += stVideo.strName;
 
 		strlog += "播放起始时间:";
 		SYSTEMTIME systime;
@@ -209,7 +209,7 @@ void CPlayerWnd::ProcPlayCtrl()
 		{
 			Alarm(WARNING_NOFILE);
 			strlog = "视频播放失败,ID=";
-			strlog += stVideo.strID;
+			strlog += stVideo.strName;
 
 			LogOutInfo(strlog);
 			Sleep(1000);

@@ -88,6 +88,9 @@ bool CNetManager::Connect()
 
 	HOSTENT* phostentry = gethostbyname(m_strIp.c_str());
 
+	if(!phostentry)
+		return false;
+
 	clientsock_in.sin_addr.S_un.S_addr= *(ULONG*)phostentry->h_addr_list[0];
 
 	clientsock_in.sin_family=AF_INET;
