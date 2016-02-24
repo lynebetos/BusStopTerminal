@@ -201,8 +201,7 @@ void CPlayerWnd::ProcPlayCtrl()
 		CString strStartTime;
 		strStartTime.Format("%04d-%02d-%02d %02d:%02d:%02d", systime.wYear, systime.wMonth,systime.wDay,systime.wHour,systime.wMinute,systime.wSecond);
 		strlog += (char*)(LPCTSTR)strStartTime;
-		LogOutInfo(strlog);
-		//
+		LogOutInfo(strlog);		//
 
 		
 		if(!m_avp.Play(stVideo.strName.c_str()))

@@ -306,32 +306,7 @@ bool CJsonManager::AnalysePlayList(Json::Value& refValue)
 {
 	tagListPlay stListPlay;
 	stListPlay.sthead = m_stHead;
-	Json::Value jList = refValue[J_ARRAY];
-
-	tagPlay stPlay;
-	stPlay.strStartDate = jList["startdate"].asString();
-	stPlay.strEndDate = jList["enddate"].asString();
-
-	Json::Value Result = jList["result"];
-	for (int ii = 0; ii< (int)Result.size(); ii++)
-	{
-		stPlay.strStartTime = Result[ii]["starttime"].asString();
-		stPlay.strEndTime = Result[ii]["endtime"].asString();
-
-		Json::Value vPlay = Result[ii]["advertisment"];
-		for (int jj = 0; jj< (int)vPlay.size(); jj++)
-		{
-			tagPlay::_st_list stUnit;
-			stUnit.strID = vPlay[jj]["id"].asString();
-			stUnit.strName = vPlay[jj]["name"].asString();
-			stUnit.strNum = vPlay[jj]["num"].asString();
-
-			stPlay.listPlay.push_back(stUnit);
-		}
-
-		stListPlay.listListPlay.push_back(stPlay);
-		stPlay.listPlay.clear();
-	}
+	stListPlay.strUrl = refValue["address"].asString();
 
 	m_Message.SetMessage(stListPlay.sthead.command, (void*)&stListPlay);
 	return true;

@@ -276,6 +276,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\VideoPlayList.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\VolumeManager.cpp"
 				>
 				<FileConfiguration
@@ -367,6 +371,10 @@
 			</File>
 			<File
 				RelativePath=".\TransToWnd.h"
+				>
+			</File>
+			<File
+				RelativePath=".\VideoPlayList.h"
 				>
 			</File>
 			<File

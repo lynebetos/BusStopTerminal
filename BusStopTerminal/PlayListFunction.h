@@ -17,7 +17,7 @@ public:
 
 private:
 
-	bool WriteListFile();
+	bool WriteListFile(); //已弃用
 	bool LoadListFile();
 
 	static unsigned int _stdcall threadUpdate(LPVOID lpvoid);
@@ -25,7 +25,7 @@ private:
 	void ProcUpdate();
 
 private:
-	vector<_st_PlayList> m_setPlayList;
+	vector<_st_PlayList> m_setPlayList; //已弃用
 	CMessage m_Message;
 	bool  m_bUpDateRun;
 

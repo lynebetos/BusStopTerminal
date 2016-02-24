@@ -291,6 +291,7 @@ typedef struct _st_ListNotic
 	list<tagNotice> listListNotice;
 }tagListNotic, *PListNotic;
 
+//播放列表存储结构，已弃用
 typedef struct _st_Play
 {
 	struct _st_list
@@ -321,7 +322,7 @@ typedef struct _st_Play
 typedef struct _st_ListPlay  //广告播放列表更新用结构
 {
 	tagDataHead sthead;
-	list<tagPlay> listListPlay;
+	string strUrl;
 }tagListPlay, *PListPlay;
 
 struct _st_Linestop		//线路详情（包含线路下的所有站点）

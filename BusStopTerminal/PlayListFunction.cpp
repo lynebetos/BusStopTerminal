@@ -3,6 +3,8 @@
 #include "ConfigManager.h"
 #include "NetManager.h"
 #include "TransToWnd.h"
+#include "VideoPlayList.h"
+#include "../include/http/base_http.h"
 
 CPlayListFunction::CPlayListFunction(void)
 : m_bUpDateRun(false)
@@ -31,36 +33,74 @@ bool CPlayListFunction::LoadListFile()
 
 	TiXmlElement* pRoot = doc.RootElement();
 
+	CVideoPlayList* pVideoPlayList = CVideoPlayList::GetInstance();
+	if(NULL == pVideoPlayList)
+	{
+		return false;
+	}
+
 	for (TiXmlElement* pChild = pRoot->FirstChildElement(); pChild != NULL; pChild = pChild->NextSiblingElement())
 	{
-		_st_PlayList stPlayList;
-		for (TiXmlElement* pChildList = pChild->FirstChildElement(); pChildList != NULL; pChildList = pChildList->NextSiblingElement())
+		const char* szKind = pChild->Value();
+		if(strcmp("resources", szKind) == 0)
 		{
-			const char* szValue = pChildList->Value();
-			if(strcmp("start", szValue) == 0)
+			for (TiXmlElement* pChildList = pChild->FirstChildElement(); pChildList != NULL; pChildList = pChildList->NextSiblingElement())
 			{
-				string strStartDateTime = pChildList->Attribute("date");
-				strStartDateTime += " ";
-				strStartDateTime += pChildList->Attribute("time");
-				stPlayList.tStart = CBase::string2time(strStartDateTime);
-			}
-			else if(strcmp("end", szValue) == 0)
-			{
-				string strEndDateTime = pChildList->Attribute("date");
-				strEndDateTime += " ";
-				strEndDateTime += pChildList->Attribute("time");
-				stPlayList.tEnd = CBase::string2time(strEndDateTime);
-			}
-			else if(strcmp("advertisment", szValue) == 0)
-			{
-				tagPlay::_st_list stList;
-				stList.strName = pChildList->Attribute("name");
-				stList.strNum = pChildList->Attribute("num");
-				stPlayList.listPlay.push_back(stList);
+				const char* szValue = pChildList->Value();
+				if(strcmp("res", szValue) == 0)
+				{
+					string strName = pChildList->Attribute("name");
+					string strUrl = pChildList->Attribute("downUrl");
+					pVideoPlayList->AddResource(strName, strUrl);
+				}
 			}
 		}
+		else if(strcmp("list", szKind) == 0)
+		{
+			for (TiXmlElement* pChildList = pChild->FirstChildElement(); pChildList != NULL; pChildList = pChildList->NextSiblingElement())
+			{
+				//一天段
+				CVideoPlayList::_st_dayblock& refDay = pVideoPlayList->AddDay();
+				const char* szValue = pChildList->Value();
+				if(strcmp("day", szValue) == 0)
+				{
+					refDay.strStartDate = pChildList->Attribute("start");
+					refDay.strEndDate = pChildList->Attribute("end");
 
-		m_setPlayList.push_back(stPlayList);
+					for (TiXmlElement* pChildTime = pChildList->FirstChildElement(); pChildTime != NULL; pChildList = pChildTime->NextSiblingElement())
+					{
+						//时间段
+						const char* szTime = pChildTime->Value();
+						if(strcmp("time", szTime) == 0)
+						{
+							CVideoPlayList::_st_timeblock stTime;
+							refDay.vecTimeblock.push_back(stTime);
+							CVideoPlayList::_st_timeblock& refTime = refDay.vecTimeblock.back();
+
+							refTime.strStartTime = pChildTime->Attribute("start");
+							refTime.strEndTime = pChildTime->Attribute("end");
+
+							for (TiXmlElement* pChildVideo = pChildTime->FirstChildElement(); pChildVideo != NULL; pChildList = pChildVideo->NextSiblingElement())
+							{
+								//视频控制
+								const char* szVideo = pChildVideo->Value();
+								if(strcmp("advertisement", szVideo) == 0)
+								{
+									CVideoPlayList::_st_Video stVideo;
+									refTime.vecVideo.push_back(stVideo);
+									CVideoPlayList::_st_Video& refVideo = refTime.vecVideo.back();
+
+									refVideo.strName = pChildVideo->Attribute("name");
+									refVideo.nPlaysec = atoi(pChildVideo->Attribute("playsec"));
+
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
 	}
 
 	return true;
@@ -86,6 +126,20 @@ bool CPlayListFunction::OnMessage(CMessage* pMessage)
 		LogOutInfo("播放列表更新错误");
 		//播放列表更新错误
 	}
+
+	tagResponse stResponse;
+	stResponse.head = pstListPlay->sthead;
+	stResponse.head.messageType = MT_Response;
+	stResponse.nStatus = 200;
+	stResponse.strMsg = "正常";
+	CMessage msg;
+	msg.SetMessage(Message_Response, &stResponse);
+	CNetManager* pNM = CNetManager::GetNet();
+	if(pNM)
+	{
+		pNM->SendData(msg);
+	}
+
 
 	m_bUpDateRun = true;
 
@@ -113,52 +167,61 @@ void CPlayListFunction::ProcUpdate()
 	{
 		LogOutError("播放列表数据错误");
 	}
-	m_setPlayList.clear();
 
-	for (list<tagPlay>::iterator iterList = pstListPlay->listListPlay.begin();
-		iterList != pstListPlay->listListPlay.end();
-		iterList++)
+	bool bDownSucc = true;
+
+	CConfigManager* pCM = CConfigManager::GetInstance();
+
+	std::string& strUrl = pstListPlay->strUrl;
+
+
+	base_http::CBaseHttp baseHttp;
+	string strListFile = pCM->GetPlaylistPath();
+
+	strUrl = Utf8toAnsi(strUrl);
+	strUrl = AnsiToUtf8(strUrl);
+
+	//baseHttp.AddHttpHeader("Authorization", "Basic YWRtaW46YWRtaW4=");
+	bool bDown = baseHttp.HttpGet(strUrl.c_str());
+	if(!bDown)
 	{
-		_st_PlayList stPlayList;
-
-		string strStartDateTime = iterList->strStartDate;
-		strStartDateTime += " ";
-		strStartDateTime += iterList->strStartTime;
-
-		stPlayList.tStart = CBase::string2time(strStartDateTime);
-
-		string strEndDateTime = iterList->strEndDate;
-		strEndDateTime += " ";
-		strEndDateTime += iterList->strEndTime;
-
-		stPlayList.tEnd = CBase::string2time(strEndDateTime);
-
-		stPlayList.listPlay = iterList->listPlay;
-
-		std::sort(stPlayList.listPlay.begin(), stPlayList.listPlay.end(), less<tagPlay::_st_list>());
-		m_setPlayList.push_back(stPlayList);
-
+		stringstream sstrLog;
+		sstrLog<<"资源下载失败,URL= "<<strUrl;
+		LogOutError(sstrLog.str().c_str());
+		sstrLog.str("");
+		bDownSucc = false;
 	}
 
-	WriteListFile();
+	bool bWrite = baseHttp.SaveDataToFile(strListFile.c_str());
+	// 				bool bDown = baseHttp.HttpDownload(strUrl.c_str(), strAdvPath.c_str());
+
+	if(!bWrite)
+	{
+		stringstream sstrLog;
+		sstrLog<<"资源写入失败,保存路径 "<<strListFile;
+		LogOutError(sstrLog.str().c_str());
+		sstrLog.str("");
+		bDownSucc = false;
+	}
+	else
+	{
+		stringstream sstrLog;
+		sstrLog<<"资源下载成功,URL= "<<strUrl<<"; 保存路径:"<<strListFile;
+		LogOutError(sstrLog.str().c_str());
+		sstrLog.str("");
+	}
+
+	if(!bDownSucc)
+	{
+		//报警信息
+		return;
+	}
+
 	LogOutInfo("播放列表更新成功");
 
+	LoadListFile();
+
 	CTransToWnd::SendReloadPlayList();
-
-	tagResponse stResponse;
-	stResponse.head = pstListPlay->sthead;
-	stResponse.head.messageType = MT_Response;
-	stResponse.nStatus = 200;
-	stResponse.strMsg = "正常";
-	CMessage msg;
-	msg.SetMessage(Message_Response, &stResponse);
-	CNetManager* pNM = CNetManager::GetNet();
-	if(pNM)
-	{
-		pNM->SendData(msg);
-	}
-
-	m_bUpDateRun = false;
 
 }
 

@@ -141,3 +141,8 @@
 2016-02-02 16:52:00,558.000 [11200] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程
 2016-02-02 16:53:25,371.000 [14764] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
 2016-02-02 16:53:25,372.000 [14764] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-02-19 11:37:54,672.000 [15292] [INFO] (.\BusStopDefenceDlg.cpp:195) TerminalDefence : 站牌守护进程启动。。。
+2016-02-19 11:37:54,674.000 [15292] [ERROR] (.\BusStopDefenceDlg.cpp:282) TerminalDefence : 读取事件未创建成功!
+2016-02-19 11:39:39,809.000 [9100] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-02-19 11:41:29,839.000 [9100] [ERROR] (.\BusStopDefenceDlg.cpp:402) TerminalDefence : 无法连接更新服务!URL = http://192.168.4.202:8080/TriffCityBusVersion/HttpGetVersion?
+2016-02-19 11:42:01,153.000 [10920] [INFO] (.\BusStopDefenceDlg.cpp:316) TerminalDefence : 终端10秒未响应,重启终端进程

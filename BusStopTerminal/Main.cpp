@@ -35,7 +35,7 @@ int CMain::Initialize()
 	bInitSuc = InitLogs(("../config/"));
 
 	LogObject;
-	LogOutInfo("’æ≈∆÷’∂À∆Ù∂Ø,∞Ê±æ:1.5.1(build20150908)");
+	LogOutInfo("’æ≈∆÷’∂À∆Ù∂Ø,∞Ê±æ:1.5.1(build20160130)");
 
 	if(!bInitSuc)
 	{
